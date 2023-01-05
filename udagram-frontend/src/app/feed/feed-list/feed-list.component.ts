@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Input, OnDestroy } from '@angular/core';
+import { environment } from '../../../environments/environment';
 import { FeedItem } from '../models/feed-item.model';
 import { FeedProviderService } from '../services/feed.provider.service';
 import { Subscription } from 'rxjs';
