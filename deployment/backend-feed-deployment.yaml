@@ -18,7 +18,13 @@ spec:
       - image: huma23/udagram-api-feed:v1
         name: backend-feed
         imagePullPolicy: Always  
-        resources:                
+        resources:
+          requests:
+            memory: "1024Mi"
+            cpu: "250m"
+          limits:
+            memory: "2048Mi"
+            cpu: "500m"            
         env:
         - name: URL
           valueFrom:
